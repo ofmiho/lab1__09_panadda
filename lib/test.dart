@@ -12,7 +12,7 @@ void main(){
   //CONST ค่าคงที่ กำหนคค่าเลยเปลี่ยนค่าไม่ได้
   //num ระบุแบบกว้างๆได้ทั้ง int & double
   //มี 2 คำ firstName
-  //มี 3 8e myFirstName
+  //มี 3 คำ myFirstName
 
 
   print("Hello!  $fname $age $money $x");
