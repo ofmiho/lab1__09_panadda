@@ -1,33 +1,36 @@
 import 'dart:io';
 
 void main(){
-  num km , cm , m , bmi;
+  double kg , cm , m , bmi;
+  String s;
 
   stdout.write("น้ำหนัก : ");
-  km = num.parse(stdin.readLineSync()!);
+  kg = double.parse(stdin.readLineSync()!);
 
   stdout.write("ส่วนสูง : ");
-  cm = num.parse(stdin.readLineSync()!);
+  cm = double.parse(stdin.readLineSync()!);
 
   m = cm / 100;
-  bmi = km/(m*m);
+  bmi = kg/(m*m);
 
   if (bmi < 18.5)
     {
-      print("ผอม");
+      s = "ผอม";
     }
   else if (bmi < 25)
     {
-      print("ปกติ");
+      s = "ปกติ";
     }
   else if (bmi < 30)
     {
-      print("ท้วม");
+      s = "ท้วม";
     }
   else
     {
-      print("อ้วน");
+      s = "อ้วน";
     }
 
+  print("น้ำหนัก : $kg kg. | ส่วนสูง : $cm cm.");
+  print("BMI = $bmi สถานะ : $s");
 
 }
